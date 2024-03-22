@@ -79,7 +79,7 @@
         });
       };
       document.body.appendChild(script);
-      window['vkBridge'].send('VKWebAppInit');
+      setTimeout(() => window['vkBridge'].send('VKWebAppInit'), 1000);
     </script>
   </body>
 </html>
