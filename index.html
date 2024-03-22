@@ -79,7 +79,9 @@
         });
       };
       document.body.appendChild(script);
-      setTimeout(() => window['vkBridge'].send('VKWebAppInit'), 1000);
+      setTimeout(function () {
+        window['vkBridge'].send('VKWebAppInit');
+      }, 3000);
     </script>
   </body>
 </html>
